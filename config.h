@@ -29,13 +29,13 @@ static const uint8_t offsets[] = {
 
 // Current colors are in .Xresources
 static const char *colors[] = {
-	"#ffffff", //focuscol
-	"#ffffff", //unfocuscol
-	"#ffffff", //fixedcol
-	"#ffffff", //unkilcol
-	"#ffffff", //fixedunkilcol
-	"#ffffff", //outerbordercol
-	"#ffffff"  //emptycol
+	"#884444", //focuscol
+	"#666666", //unfocuscol
+	"#444488", //fixedcol
+	"#448844", //unkilcol
+	"#444488", //fixedunkilcol
+	"#202020", //outerbordercol
+	"#000000"  //emptycol
 };
 
 static const uint8_t borders[] = { 
