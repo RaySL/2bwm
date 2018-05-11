@@ -35,7 +35,7 @@ static const char *colors[] = {
 	"#448844", //unkilcol
 	"#444488", //fixedunkilcol
 	"#202020", //outerbordercol
-	"#000000"  //emptycol
+	"#202020"  //emptycol
 };
 
 static const uint8_t borders[] = { 
