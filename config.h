@@ -1,7 +1,7 @@
 #define MOD             XCB_MOD_MASK_4
 #define CURSOR_POSITION MIDDLE
 #define LOOK_INTO 	"WM_NAME"
-#define WORKSPACES      3
+#define WORKSPACES      5
 
 static const bool resize_by_line = true;
 static const bool inverted_colors = false;
@@ -9,15 +9,15 @@ static const float resize_keep_aspect_ratio = 1.05;
 
 static const char *ignore_names[] = { "bar" };
 static const char *menucmd[]      = { "", NULL };
-static const char *terminal[]     = { "alacritty", NULL };
-static const char *rofi[]         = { "rofi", "-show", "run", NULL };
-static const char *draw[]         = { "bash", "~/.bin/draw", NULL };
+static const char *terminal[]     = { "urxvt", NULL };
+static const char *rofi[]         = { "rofi", "-show", "window", NULL };
+//static const char *draw[]         = { "bash", "~/.bin/draw", NULL };
 
 static const uint16_t movements[] = { 
-	0,  //step slow
+	16,  //step slow
 	32, //step normal
-	0,  //mouse slow
-	0   //mouse normal
+	16,  //mouse slow
+	32  //mouse normal
 };
 
 static const uint8_t offsets[] = { 
@@ -29,20 +29,20 @@ static const uint8_t offsets[] = {
 
 // Current colors are in .Xresources
 static const char *colors[] = {
-	"#884444", //focuscol
-	"#666666", //unfocuscol
-	"#444488", //fixedcol
-	"#448844", //unkilcol
-	"#444488", //fixedunkilcol
-	"#202020", //outerbordercol
-	"#202020"  //emptycol
+	"#000000", //focuscol
+	"#000000", //unfocuscol
+	"#000000", //fixedcol
+	"#000000", //unkilcol
+	"#000000", //fixedunkilcol
+	"#000000", //outerbordercol
+	"#000000"  //emptycol
 };
-
+//static const char *colors[] = {"#ac8d6e","#607a86","#a66959","#60867f","#8a757e","#20292d","#20292d"};
 static const uint8_t borders[] = { 
-	6, //outer border size
-	8, //full border size
-	2, //magnet border size
-	2  //resize border size
+	5, //outer border size
+	7, //full border size
+	0, //magnet border size
+	7  //resize border size
 };
 
 static void halfandcentered(const Arg *arg)
