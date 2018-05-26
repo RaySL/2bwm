@@ -10,7 +10,7 @@ static const float resize_keep_aspect_ratio = 1.05;
 static const char *ignore_names[] = { "bar" };
 static const char *menucmd[]      = { "", NULL };
 static const char *terminal[]     = { "st", NULL };
-static const char *rofi[]         = { "rofi", "-show", "window", NULL };
+static const char *rofi[]         = { "rofi", "-show", "drun", NULL };
 //static const char *draw[]         = { "bash", "~/.bin/draw", NULL };
 
 static const uint16_t movements[] = { 
