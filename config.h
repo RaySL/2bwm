@@ -81,7 +81,7 @@ static key keys[] = {
     {  MOD,                    XK_Tab,        focusnext,           {.i = TWOBWM_FOCUS_NEXT} },
     {  MOD | SHIFT,            XK_Tab,        focusnext,           {.i = TWOBWM_FOCUS_PREVIOUS} },
     // Kill a window
-    {  MOD,                    XK_q,          killandfocus,        {.i = 0} },
+    {  MOD,                    XK_c,          killandfocus,        {.i = 0} },
     // Resize a window
     {  MOD | SHIFT,            XK_Up,         resizestep,          {.i = TWOBWM_RESIZE_UP} },
     {  MOD | SHIFT,            XK_Down,       resizestep,          {.i = TWOBWM_RESIZE_DOWN} },
@@ -113,9 +113,9 @@ static key keys[] = {
     // Top right:
     {  MOD,                    XK_u,          teleport,            {.i = TWOBWM_TELEPORT_TOP_RIGHT} },
     // Bottom left:
-    {  MOD,                    XK_b,          teleport,            {.i = TWOBWM_TELEPORT_BOTTOM_LEFT} },
+    {  MOD,                    XK_n,          teleport,            {.i = TWOBWM_TELEPORT_BOTTOM_LEFT} },
     // Bottom right:
-    {  MOD,                    XK_n,          teleport,            {.i = TWOBWM_TELEPORT_BOTTOM_RIGHT} },
+    {  MOD,                    XK_m,          teleport,            {.i = TWOBWM_TELEPORT_BOTTOM_RIGHT} },
     // Resize while keeping the window aspect
     {  MOD,                    XK_o,          resizestep_aspect,   {.i = TWOBWM_RESIZE_KEEP_ASPECT_GROW} },
     {  MOD,                    XK_p,          resizestep_aspect,   {.i = TWOBWM_RESIZE_KEEP_ASPECT_SHRINK} },
@@ -145,7 +145,7 @@ static key keys[] = {
     // Make the window unkillable
     {  MOD,                    XK_a,          unkillable,          {} },
     // Make the window appear always on top
-    {  MOD,                    XK_t,          always_on_top,       {} },
+    //{  MOD,                    XK_t,          always_on_top,       {} },
     // Make the window stay on all workspaces
     {  MOD ,                   XK_space,      fix,                 {} },
     
